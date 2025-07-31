@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>British Shorthair Cats - Cute & Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            background: pink;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2em 0 1em 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+        }
+        h2 {
+            margin-top: 2em;
+            color: #b45ba2;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+            margin: 2em 0;
+        }
+        .gallery img {
+            border-radius: 20px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            background: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 2em;
+            background: rgba(255,255,255,0.6);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(180,90,162,0.1);
+        }
+        .audio-controls {
+            margin: 1em auto 2em auto;
+            text-align: center;
+        }
+        .audio-controls button {
+            background: #b45ba2;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 0.7em 2em;
+            font-size: 1.1em;
+            margin: 0 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(180,90,162,0.2);
+            transition: background 0.2s;
+        }
+        .audio-controls button:hover {
+            background: #922d7e;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                width: 90vw;
+                height: 60vw;
+            }
+            .content {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>British Shorthair Cats</h1>
+        <p style="font-size:1.2em; color:#b45ba2;">The Teddy Bears of the Cat World</p>
+    </header>
+
+    <div class="audio-controls">
+        <button onclick="playMusic()">Play Music</button>
+        <button onclick="pauseMusic()">Pause Music</button>
+        <audio id="bg-music" loop>
+            <source src="Wii-Shop-Channel-Main-Theme-HQ.mp3" type="audio/mpeg" />
+            Your browser does not support the audio tag.
+        </audio>
+        <p style="color:#922d7e; font-size:0.9em;">Enjoy the Wii Shop Channel Main Theme while browsing!</p>
+    </div>
+
+    <div class="content">
+        <h2>Breed Overview</h2>
+        <p>
+            The <strong>British Shorthair</strong> is one of the oldest and most beloved domesticated cat breeds. Famous for their plush, plush fur and iconic round faces, these cats are known for their calm demeanor, intelligence, and affectionate–yet independent–nature. They're often described as <em>teddy bears with whiskers</em>!
+        </p>
+        <ul>
+            <li><strong>Origin:</strong> United Kingdom</li>
+            <li><strong>Coat:</strong> Dense, plush double-layered; soft to the touch</li>
+            <li><strong>Colors:</strong> Most popular is “British Blue” (solid blue-gray), but comes in many others</li>
+            <li><strong>Temperament:</strong> Calm, gentle, independent, affectionate but not clingy</li>
+            <li><strong>Life Span:</strong> 12-20 years</li>
+            <li><strong>Good for families:</strong> Yes! Very tolerant and safe with children</li>
+        </ul>
+
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>The British Shorthair is the inspiration for John Tenniel’s famous illustration of the Cheshire Cat in "Alice in Wonderland".</li>
+            <li>They’re known to be quiet and not very vocal – perfect for peaceful households.</li>
+            <li>Their big, round copper or gold eyes and stocky build make them unmistakable and irresistibly cute!</li>
+        </ul>
+
+        <h2>Care Tips</h2>
+        <ul>
+            <li>Brush your British Shorthair weekly to maintain their thick coat.</li>
+            <li>Keep them at a healthy weight—they love lounging but benefit from interactive play!</li>
+            <li>Schedule regular vet checkups; this breed is generally very healthy.</li>
+        </ul>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="Cute British Shorthair Cat" />
+        <img src="https://images.pexels.com/photos/1049764/pexels-photo-1049764.jpeg" alt="Blue British Shorthair Cat" />
+        <img src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg" alt="British Shorthair on bed" />
+        <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg" alt="Playful British Shorthair" />
+    </div>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById('bg-music');
+            music.play();
+        }
+        function pauseMusic() {
+            const music = document.getElementById('bg-music');
+            music.pause();
+        }
+    </script>
+</body>
+</html>
